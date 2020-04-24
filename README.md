@@ -1,2 +1,2 @@
 # inconclusive
-Test repository
+Test repository to see how GitHub handles redirects
