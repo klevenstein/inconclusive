@@ -1,0 +1,76 @@
+KLEVENST-M-J4LY:repos klevenst$ git clone git@github.com:klevenstein/inconclusive.git
+Cloning into 'inconclusive'...
+Warning: Permanently added the RSA host key for IP address '140.82.112.4' to the list of known hosts.
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+KLEVENST-M-J4LY:repos klevenst$ ls
+aci-101					devnet-express-cloud-collab		intro-python-labs
+application-centric-infrastructure	devnet-writing-guidelines		iosxe_model_driven_telemetry
+cat9k-app-hosting-labs			dnav4-intro-dnac-labs			learning_lab_vagrant_netprog
+containers-code				dne-collab-v2				ll_net_cicd
+containers-dne-labs			dne-dnac-intro				nso-labs
+dev-setup-labs				dne-security-code			sdwan_deployments_action_orchestrator
+devasc					inconclusive				untitled folder
+
+KLEVENST-M-J4LY:repos klevenst$ rm -rf inconclusive
+
+# renamed "inconclusive" to "zipper"
+
+KLEVENST-M-J4LY:repos klevenst$ ls
+aci-101					devnet-express-cloud-collab		iosxe_model_driven_telemetry
+application-centric-infrastructure	devnet-writing-guidelines		learning_lab_vagrant_netprog
+cat9k-app-hosting-labs			dnav4-intro-dnac-labs			ll_net_cicd
+containers-code				dne-collab-v2				nso-labs
+containers-dne-labs			dne-dnac-intro				sdwan_deployments_action_orchestrator
+dev-setup-labs				dne-security-code			untitled folder
+devasc					intro-python-labs
+
+KLEVENST-M-J4LY:repos klevenst$ git clone git@github.com:klevenstein/inconclusive.git
+Cloning into 'inconclusive'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+KLEVENST-M-J4LY:repos klevenst$ ls
+aci-101					devnet-express-cloud-collab		intro-python-labs
+application-centric-infrastructure	devnet-writing-guidelines		iosxe_model_driven_telemetry
+cat9k-app-hosting-labs			dnav4-intro-dnac-labs			learning_lab_vagrant_netprog
+containers-code				dne-collab-v2				ll_net_cicd
+containers-dne-labs			dne-dnac-intro				nso-labs
+dev-setup-labs				dne-security-code			sdwan_deployments_action_orchestrator
+devasc					inconclusive				untitled folder
+
+KLEVENST-M-J4LY:repos klevenst$ cd inconclusive
+
+KLEVENST-M-J4LY:inconclusive klevenst$ git remote -v
+origin	git@github.com:klevenstein/inconclusive.git (fetch)
+origin	git@github.com:klevenstein/inconclusive.git (push)
+
+KLEVENST-M-J4LY:inconclusive klevenst$ touch testing.txt
+KLEVENST-M-J4LY:inconclusive klevenst$ ls
+README.md	testing.txt
+
+KLEVENST-M-J4LY:inconclusive klevenst$ git add .
+KLEVENST-M-J4LY:inconclusive klevenst$ git commit -a -m "test commit"
+[master 65e1957] test commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testing.txt
+
+KLEVENST-M-J4LY:inconclusive klevenst$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:klevenstein/zipper.git
+To github.com:klevenstein/inconclusive.git
+   66170c2..65e1957  master -> master
+KLEVENST-M-J4LY:inconclusive klevenst$ 
